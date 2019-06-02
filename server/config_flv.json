@@ -1,0 +1,35 @@
+{
+  "datatype": 1,
+  "urls": [
+    { "url": "http://192.168.1.23/postdata" },
+    { "url": "http://192.168.1.223/postdata" }
+  ],
+
+  "contentlen": {
+    "offset": 0,
+    "len": 4,
+    "includeht": 0
+  },
+  //设备名称 或者 ssrc
+  "timestamp": {
+    "offset": 4,
+    "len": 4
+  },
+  "cmd": {
+    "offset": 8,
+    "len": 1
+  },
+  //音频还是视频还是其他
+  "type": {
+    "offset": 9,
+    "len": 1
+  },
+  "memo": {
+    "offset": 11,
+    "len": 2
+  },
+  "deviceid": {
+    "offset": 12,
+    "len": 4
+  }
+}

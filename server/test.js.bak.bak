@@ -1,0 +1,42 @@
+var net = require('net');
+
+
+class Base{
+    constructor(arg1,arg2){
+        this.arg1 = arg1;
+        this.arg2 = arg2;
+    }
+
+    save(){
+        console.log('Parent Saving.....   '+this.arg1);
+    }
+
+    update(){
+        console.log('Parent Updating!!!!  '+this.arg2);
+    }
+}
+
+class User extends Base{
+    constructor(arg1,arg2,arg3){
+        super(arg1,arg2);
+        this.arg3 = arg3;
+    }
+
+    remove(){
+        console.log('Child Removing!!!!  '+this.arg3);
+    }
+
+    update(){
+        console.log('Child Updating ... '+this.arg3);
+    }
+}
+
+user = new User('小明','老王','lpn');
+user.save();
+user.update();
+user.remove();
+--------------------- 
+作者：Jason是个码农 
+来源：CSDN 
+原文：https://blog.csdn.net/a120908069/article/details/54579070 
+版权声明：本文为博主原创文章，转载请附上博文链接！

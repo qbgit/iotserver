@@ -1,0 +1,14 @@
+{
+    "urls": [
+        { "url": "http://192.168.1.23/postdata" },
+        { "url": "http://192.168.1.223/postdata" }
+    ],
+    "head":{"offset":0,"len":1,"content":105},
+    "deviceid": { "offset": 1, "len": 4 },
+    "cmd": { "offset": 5, "len": 1 },
+    "contentlen": { "offset": 6, "len": 1, "includeht": 0 },
+    "crclen": 2,
+    "end_start": 1,
+    "end": 22,
+    "bl": 0
+}
